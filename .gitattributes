@@ -1,0 +1,7 @@
+
+# Preserve exact bytes of generated qualification evidence and archived sources.
+results/retailer-study/** linguist-generated=true whitespace=-blank-at-eol,-blank-at-eof
+results/retailer-study-initial-design/** linguist-generated=true whitespace=-blank-at-eol,-blank-at-eof
+results/api-136-assessment/** linguist-generated=true whitespace=-blank-at-eol,-blank-at-eof
+results/release-refresh-137-1719/** linguist-generated=true whitespace=-blank-at-eol,-blank-at-eof
+results/publication-study-137-1719/** linguist-generated=true whitespace=-blank-at-eol,-blank-at-eof

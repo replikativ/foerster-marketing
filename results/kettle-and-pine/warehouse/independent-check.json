@@ -1,0 +1,78 @@
+{
+  "passes": true,
+  "capacity-reference": {
+    "mean": 552.069877657212,
+    "sd": 17.374397497042914,
+    "saturated": true
+  },
+  "capacity-mean-error-in-mcse": [
+    0.5880178177040485,
+    1.8018621189481383,
+    0.7091431760693255
+  ],
+  "capacity-passes": true,
+  "profit-max-relative-error": 0.0,
+  "profit-passes": true,
+  "truth": {
+    "backlog": [
+      {
+        "budget": 0.0,
+        "truth-expected-profit": 60436.22381773004
+      },
+      {
+        "budget": 1250.0,
+        "truth-expected-profit": 66126.88132956326
+      },
+      {
+        "budget": 2500.0,
+        "truth-expected-profit": 67067.68095584036
+      },
+      {
+        "budget": 3750.0,
+        "truth-expected-profit": 65331.461633956
+      },
+      {
+        "budget": 5000.0,
+        "truth-expected-profit": 62674.9225076164
+      },
+      {
+        "budget": 6250.0,
+        "truth-expected-profit": 59566.126253073766
+      },
+      {
+        "budget": 7500.0,
+        "truth-expected-profit": 55958.713260494245
+      }
+    ],
+    "clear": [
+      {
+        "budget": 0.0,
+        "truth-expected-profit": 58218.8133019558
+      },
+      {
+        "budget": 1250.0,
+        "truth-expected-profit": 68397.78207289484
+      },
+      {
+        "budget": 2500.0,
+        "truth-expected-profit": 72625.51756699815
+      },
+      {
+        "budget": 3750.0,
+        "truth-expected-profit": 73943.07010290852
+      },
+      {
+        "budget": 5000.0,
+        "truth-expected-profit": 73628.4067264149
+      },
+      {
+        "budget": 6250.0,
+        "truth-expected-profit": 72288.13290592656
+      },
+      {
+        "budget": 7500.0,
+        "truth-expected-profit": 70252.69829915484
+      }
+    ]
+  }
+}

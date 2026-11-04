@@ -1,0 +1,15 @@
+{
+  "case": "co-scheduled",
+  "passes": true,
+  "scope": "fixed-point density, gradients, original-unit means/likelihood and changed observations; no posterior claim",
+  "points": 3,
+  "max-errors": {
+    "logp": 3.694822225952521e-13,
+    "gradient": 6.562418318367953e-14,
+    "mean": 1.0913936421275139e-11,
+    "pointwise": 5.3290705182007514e-14
+  },
+  "fixture-sha256": "3ac802d249f320a7fc7088aa5208adad3ae494b9ee093c7e36005b11694ce55d",
+  "python-audit-sha256": "77c5c1bc5306121279f1f9d759f44c33cfe4109239d902b54dddeeef7b75db68",
+  "foerster-audit-sha256": "907af5154b5235aa71e0e6df9322c8eef0d71c29d713d45a4628dfd23bd342ea"
+}

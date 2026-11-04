@@ -1,0 +1,82 @@
+version: 2.1
+
+orbs:
+  tools: replikativ/clj-tools@0
+
+jobs:
+  study-check:
+    description: |
+      Same density, gradients and likelihoods in PyMC-Marketing and
+      Foerster Marketing for the three Kettle & Pine cases.
+    executor: tools/clojurecli
+    environment:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+    steps:
+      - attach_workspace:
+          at: /home/circleci
+      - run:
+          name: Install the study's Python environment
+          command: |
+            curl -LsSf https://astral.sh/uv/install.sh | sh
+            "$HOME/.local/bin/uv" venv --python 3.12 .venv
+            "$HOME/.local/bin/uv" pip install --python .venv -r study/requirements.txt
+      - run:
+          name: Compare both engines at fixed points
+          command: |
+            for case in staggered co-scheduled calibrated; do
+              F=examples/kettle_and_pine/data/$case.json
+              O=results/ci-study/$case
+              mkdir -p $O
+              cp $F $O/fixture.json
+              .venv/bin/python study/pymc_audit.py $F $O/pymc-expanded-check.json
+              clojure -M:jvm:study -m foerster-study check $F $O
+              .venv/bin/python study/compare_checks.py $O
+            done
+          no_output_timeout: 45m
+      - store_artifacts:
+          path: results/ci-study
+          destination: study-check
+
+workflows:
+  build-test-and-deploy:
+    jobs:
+      - tools/setup:
+          context: docker-deploy
+      - tools/build:
+          context: docker-deploy
+          requires:
+            - tools/setup
+      - tools/format:
+          context: docker-deploy
+          requires:
+            - tools/setup
+      - tools/unittest:
+          context: docker-deploy
+          requires:
+            - tools/build
+      - study-check:
+          context: docker-deploy
+          requires:
+            - tools/build
+      - tools/deploy:
+          context:
+            - clojars-deploy
+            - docker-deploy
+          filters:
+            branches:
+              only: main
+          requires:
+            - tools/format
+            - tools/unittest
+            - study-check
+      - tools/release:
+          context:
+            - github-token
+            - docker-deploy
+          filters:
+            branches:
+              only: main
+          requires:
+            - tools/deploy

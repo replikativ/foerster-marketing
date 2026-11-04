@@ -1,0 +1,9 @@
+staggered optimum [1116. 2116. 1769.] 2861
+   foerster-optimized [1386. 2016. 1598.] gain 2567 regret 294
+   pymc-optimized [1403. 2005. 1592.] gain 2532 regret 329
+co-scheduled optimum [1098. 2085. 1817.] 3114
+   foerster-optimized [1382. 2406. 1212.] gain 1682 regret 1433
+   pymc-optimized [1375. 2402. 1223.] gain 1739 regret 1375
+calibrated optimum [1098. 2085. 1817.] 3114
+   foerster-optimized [1372. 2013. 1615.] gain 2787 regret 327
+   pymc-optimized [1355. 2000. 1645.] gain 2836 regret 278

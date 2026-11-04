@@ -1,0 +1,415 @@
+{
+  "case": "staggered",
+  "passes": true,
+  "scope": "One synthetic three-channel model; full diagnostic gates and mean agreement within five combined MCSE. Quantiles reported descriptively. No broad calibration or performance-parity claim.",
+  "parameter-comparison": [
+    {
+      "parameter": [
+        "alpha",
+        "search"
+      ],
+      "foerster-mean": 0.23422359004834356,
+      "pymc-mean": 0.23392723373781285,
+      "foerster-sd": 0.1488167498323205,
+      "pymc-sd": 0.14879441596654389,
+      "foerster-quantiles": [
+        0.045603727878009426,
+        0.20514968100110842,
+        0.5173260360212893
+      ],
+      "pymc-quantiles": [
+        0.04544194430093657,
+        0.2060399397690662,
+        0.5222058736758091
+      ],
+      "combined-mcse-mean": 0.0020539710060093748,
+      "mean-error-in-combined-mcse": 0.1442845637370975,
+      "passes": true
+    },
+    {
+      "parameter": [
+        "alpha",
+        "social"
+      ],
+      "foerster-mean": 0.6261388894878419,
+      "pymc-mean": 0.6254017210600172,
+      "foerster-sd": 0.0798243084108916,
+      "pymc-sd": 0.0774033015974534,
+      "foerster-quantiles": [
+        0.4965844100244185,
+        0.6259369128162061,
+        0.7571814152900226
+      ],
+      "pymc-quantiles": [
+        0.4990636830394694,
+        0.6254623845616466,
+        0.7513946639862578
+      ],
+      "combined-mcse-mean": 0.0011854795667638385,
+      "mean-error-in-combined-mcse": 0.6218314077205243,
+      "passes": true
+    },
+    {
+      "parameter": [
+        "alpha",
+        "video"
+      ],
+      "foerster-mean": 0.7474633586023063,
+      "pymc-mean": 0.7469484583022469,
+      "foerster-sd": 0.03798533455833709,
+      "pymc-sd": 0.03754446794505853,
+      "foerster-quantiles": [
+        0.6869521380760996,
+        0.7466319800367585,
+        0.8113406420933645
+      ],
+      "pymc-quantiles": [
+        0.685773629354217,
+        0.7464858216878403,
+        0.8094173616230877
+      ],
+      "combined-mcse-mean": 0.0005589398803244443,
+      "mean-error-in-combined-mcse": 0.921208734936798,
+      "passes": true
+    },
+    {
+      "parameter": [
+        "beta",
+        "search"
+      ],
+      "foerster-mean": 1.0110468681930322,
+      "pymc-mean": 1.0073319527156899,
+      "foerster-sd": 0.30559958222206857,
+      "pymc-sd": 0.30792025069682194,
+      "foerster-quantiles": [
+        0.5422207434169387,
+        0.9937242508223509,
+        1.5358936640639929
+      ],
+      "pymc-quantiles": [
+        0.5349296928671513,
+        0.9889071186646571,
+        1.535696979277898
+      ],
+      "combined-mcse-mean": 0.005255606080705617,
+      "mean-error-in-combined-mcse": 0.7068481580041877,
+      "passes": true
+    },
+    {
+      "parameter": [
+        "beta",
+        "social"
+      ],
+      "foerster-mean": 0.9926556748430342,
+      "pymc-mean": 0.9949582358318346,
+      "foerster-sd": 0.14382228895922675,
+      "pymc-sd": 0.14656243266990837,
+      "foerster-quantiles": [
+        0.7881716928436411,
+        0.9778596433919907,
+        1.2471066840910223
+      ],
+      "pymc-quantiles": [
+        0.7864934632586762,
+        0.980706224011957,
+        1.2571229333031
+      ],
+      "combined-mcse-mean": 0.002385821056664731,
+      "mean-error-in-combined-mcse": 0.9651021321856027,
+      "passes": true
+    },
+    {
+      "parameter": [
+        "beta",
+        "video"
+      ],
+      "foerster-mean": 0.7949494046953587,
+      "pymc-mean": 0.7947678172398489,
+      "foerster-sd": 0.0656257517889158,
+      "pymc-sd": 0.06433361227748341,
+      "foerster-quantiles": [
+        0.6877983965692797,
+        0.7946344916055923,
+        0.9011821262051533
+      ],
+      "pymc-quantiles": [
+        0.6893164585673515,
+        0.7941387319454599,
+        0.8998880772829358
+      ],
+      "combined-mcse-mean": 0.0009293631846654831,
+      "mean-error-in-combined-mcse": 0.19538912075061438,
+      "passes": true
+    },
+    {
+      "parameter": [
+        "kappa",
+        "search"
+      ],
+      "foerster-mean": 0.825845790926175,
+      "pymc-mean": 0.8298610104380313,
+      "foerster-sd": 0.5105621555125708,
+      "pymc-sd": 0.5202220580630005,
+      "foerster-quantiles": [
+        0.2906182042636764,
+        0.6956535778692765,
+        1.7991554610348093
+      ],
+      "pymc-quantiles": [
+        0.2878496559062664,
+        0.6987223529817742,
+        1.81724976963764
+      ],
+      "combined-mcse-mean": 0.006986676417617612,
+      "mean-error-in-combined-mcse": 0.5746966471398984,
+      "passes": true
+    },
+    {
+      "parameter": [
+        "kappa",
+        "social"
+      ],
+      "foerster-mean": 0.6032481837113276,
+      "pymc-mean": 0.597180616388662,
+      "foerster-sd": 0.27546482750194523,
+      "pymc-sd": 0.2690399679813544,
+      "foerster-quantiles": [
+        0.27561753444153997,
+        0.5465122916746428,
+        1.11912161907021
+      ],
+      "pymc-quantiles": [
+        0.2681785424733404,
+        0.543484886374102,
+        1.1018536621973916
+      ],
+      "combined-mcse-mean": 0.003869843137049597,
+      "mean-error-in-combined-mcse": 1.5679104056118214,
+      "passes": true
+    },
+    {
+      "parameter": [
+        "kappa",
+        "video"
+      ],
+      "foerster-mean": 0.5741417116111688,
+      "pymc-mean": 0.5712117192205621,
+      "foerster-sd": 0.17115371454336578,
+      "pymc-sd": 0.1681405157402504,
+      "foerster-quantiles": [
+        0.34402990747952716,
+        0.5494612787685262,
+        0.8811311868650844
+      ],
+      "pymc-quantiles": [
+        0.3438018927929145,
+        0.5478718000163585,
+        0.875713148222417
+      ],
+      "combined-mcse-mean": 0.0022238179000085515,
+      "mean-error-in-combined-mcse": 1.3175505020421787,
+      "passes": true
+    },
+    {
+      "parameter": [
+        "intercept"
+      ],
+      "foerster-mean": 1.106415488383501,
+      "pymc-mean": 1.1039572367512498,
+      "foerster-sd": 0.29110888730328893,
+      "pymc-sd": 0.2974813570074341,
+      "foerster-quantiles": [
+        0.5869732797022699,
+        1.1336962996451807,
+        1.5304318267405277
+      ],
+      "pymc-quantiles": [
+        0.5653458685892094,
+        1.1350959649932062,
+        1.535435465993492
+      ],
+      "combined-mcse-mean": 0.004952913195601022,
+      "mean-error-in-combined-mcse": 0.4963243923665828,
+      "passes": true
+    },
+    {
+      "parameter": [
+        "sigma"
+      ],
+      "foerster-mean": 0.06797115739343872,
+      "pymc-mean": 0.06797563633991126,
+      "foerster-sd": 0.004485807137346617,
+      "pymc-sd": 0.0044978398815192265,
+      "foerster-quantiles": [
+        0.06097621481505669,
+        0.06773708439290627,
+        0.075696462202281
+      ],
+      "pymc-quantiles": [
+        0.061036113336910454,
+        0.0677099522400815,
+        0.07573212070667097
+      ],
+      "combined-mcse-mean": 5.177172458320792e-05,
+      "mean-error-in-combined-mcse": 0.08651337208871296,
+      "passes": true
+    },
+    {
+      "parameter": [
+        "control",
+        "demand"
+      ],
+      "foerster-mean": 0.20932870522473787,
+      "pymc-mean": 0.2095290823789448,
+      "foerster-sd": 0.012647233932932935,
+      "pymc-sd": 0.01258518550529882,
+      "foerster-quantiles": [
+        0.18781948047781555,
+        0.2096925433786217,
+        0.22959917801528676
+      ],
+      "pymc-quantiles": [
+        0.1885099020545458,
+        0.20979957781341968,
+        0.22989829250867252
+      ],
+      "combined-mcse-mean": 0.0001981949126031295,
+      "mean-error-in-combined-mcse": 1.011010583345128,
+      "passes": true
+    },
+    {
+      "parameter": [
+        "control",
+        "promotion"
+      ],
+      "foerster-mean": 0.1299843803960289,
+      "pymc-mean": 0.13030568621815375,
+      "foerster-sd": 0.021896513937398818,
+      "pymc-sd": 0.02150249989646388,
+      "foerster-quantiles": [
+        0.09331630451528079,
+        0.13027689036216036,
+        0.16558733643895843
+      ],
+      "pymc-quantiles": [
+        0.09496279966555642,
+        0.13057858647425746,
+        0.1655964054461873
+      ],
+      "combined-mcse-mean": 0.00030478113829887534,
+      "mean-error-in-combined-mcse": 1.0542181970912594,
+      "passes": true
+    },
+    {
+      "parameter": [
+        "control",
+        "annual_sin"
+      ],
+      "foerster-mean": 0.17576955844175474,
+      "pymc-mean": 0.17572173955995657,
+      "foerster-sd": 0.00909087994980355,
+      "pymc-sd": 0.009273758339377228,
+      "foerster-quantiles": [
+        0.1608037227945526,
+        0.17579240837433519,
+        0.19058940105859085
+      ],
+      "pymc-quantiles": [
+        0.16039566262473434,
+        0.17577437285067418,
+        0.19106053055028524
+      ],
+      "combined-mcse-mean": 0.00010559117391452117,
+      "mean-error-in-combined-mcse": 0.45286817094085846,
+      "passes": true
+    },
+    {
+      "parameter": [
+        "control",
+        "annual_cos"
+      ],
+      "foerster-mean": -0.09141234320885991,
+      "pymc-mean": -0.09151934008877162,
+      "foerster-sd": 0.00918698856810828,
+      "pymc-sd": 0.009107434361939136,
+      "foerster-quantiles": [
+        -0.10667544056801731,
+        -0.09139793312891412,
+        -0.07632177832169093
+      ],
+      "pymc-quantiles": [
+        -0.10636460894681919,
+        -0.09153205227384295,
+        -0.0765573900499551
+      ],
+      "combined-mcse-mean": 0.00010343168631187691,
+      "mean-error-in-combined-mcse": 1.0344690657859335,
+      "passes": true
+    }
+  ],
+  "common-plan-comparison": [
+    {
+      "plan": "foerster-optimized",
+      "weekly-allocation": [
+        1386.2388689095255,
+        2016.1014808553969,
+        1597.6596502350776
+      ],
+      "foerster-gain": {
+        "mean": 1307.478200617055,
+        "p05": -870.0561754715322,
+        "p50": 1378.073382422168,
+        "p95": 3230.9251031736026
+      },
+      "pymc-gain": {
+        "mean": 1326.0238250132622,
+        "p05": -878.8869970961969,
+        "p50": 1404.040337595652,
+        "p95": 3243.3478201459816
+      },
+      "mean-error-in-combined-mcse": 1.005328738910392,
+      "passes": true
+    },
+    {
+      "plan": "pymc-optimized",
+      "weekly-allocation": [
+        1403.2652300645184,
+        2005.0313619605336,
+        1591.7034079749485
+      ],
+      "foerster-gain": {
+        "mean": 1307.311432374862,
+        "p05": -797.7587359565615,
+        "p50": 1375.2705683901295,
+        "p95": 3167.536449029826
+      },
+      "pymc-gain": {
+        "mean": 1325.2219829076892,
+        "p05": -805.7824944219959,
+        "p50": 1400.46410793229,
+        "p95": 3176.7753516372
+      },
+      "mean-error-in-combined-mcse": 1.005197880095772,
+      "passes": true
+    }
+  ],
+  "resources": {
+    "pymc": {
+      "fit-process-cpu-seconds": 390.82,
+      "maximum-rss-kbytes": 409208,
+      "sampler": "PyMC default NUTS (nuts_sampler='pymc')",
+      "min-bulk-ess-per-fit-process-cpu-second": 15.084852323518895
+    },
+    "foerster": {
+      "fit-process-cpu-seconds": 1526.1100000000001,
+      "maximum-rss-kbytes": 1465048,
+      "min-bulk-ess-per-fit-process-cpu-second": 5.250444309664873
+    }
+  },
+  "fixture-sha256": "b3f1806fac3daa24da41e3dde6a792dc9c695752f89f784f0d1d2480052d00e8",
+  "posterior-sha256": {
+    "foerster": "269da7be78051ecf46d41ad45fab3be518c68f63964e7dc44962c36bb9e57645",
+    "pymc": "08407450d2880b0e5daaa1e741836a41e4f5bc5f8f1e686b3297359618d9a118"
+  },
+  "comparison-source-sha256": "4ed1e28e5779b4bd322105b192c600f59aaf227d5cb7828617f19488c15a5820"
+}

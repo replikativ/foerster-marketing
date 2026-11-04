@@ -1,0 +1,1 @@
+{"case": "staggered", "profile": "full", "optimizer": {"success": true, "iterations": 13}, "timing": {"public-allocation-seconds": 1.5201058210004703, "independent-evaluation-seconds": 0.9875725460005924}}

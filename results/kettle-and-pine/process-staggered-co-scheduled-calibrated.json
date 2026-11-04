@@ -1,0 +1,599 @@
+{
+  "started-at": "2026-11-04T18:01:15.653094+00:00",
+  "passes": true,
+  "cases": [
+    "staggered",
+    "co-scheduled",
+    "calibrated"
+  ],
+  "profile": "full",
+  "steps": [
+    {
+      "case": "staggered",
+      "stage": "pymc-check",
+      "command": [
+        "../.agent-tools/retailer-study-venv/bin/python",
+        "study/pymc_audit.py",
+        "results/kettle-and-pine/staggered/fixture.json",
+        "results/kettle-and-pine/staggered/pymc-expanded-check.json"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 14.738187689996266,
+      "log": "staggered/pymc-check.log",
+      "resources": "staggered/pymc-check-resources.txt"
+    },
+    {
+      "case": "staggered",
+      "stage": "foerster-check",
+      "command": [
+        "clojure",
+        "-M:jvm:study",
+        "-m",
+        "foerster-study",
+        "check",
+        "results/kettle-and-pine/staggered/fixture.json",
+        "results/kettle-and-pine/staggered"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 163.13486707099946,
+      "log": "staggered/foerster-check.log",
+      "resources": "staggered/foerster-check-resources.txt"
+    },
+    {
+      "case": "staggered",
+      "stage": "compare-checks",
+      "command": [
+        "../.agent-tools/retailer-study-venv/bin/python",
+        "study/compare_checks.py",
+        "results/kettle-and-pine/staggered"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 1.2689276579985744,
+      "log": "staggered/compare-checks.log",
+      "resources": "staggered/compare-checks-resources.txt"
+    },
+    {
+      "case": "co-scheduled",
+      "stage": "pymc-check",
+      "command": [
+        "../.agent-tools/retailer-study-venv/bin/python",
+        "study/pymc_audit.py",
+        "results/kettle-and-pine/co-scheduled/fixture.json",
+        "results/kettle-and-pine/co-scheduled/pymc-expanded-check.json"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 6.684017510000558,
+      "log": "co-scheduled/pymc-check.log",
+      "resources": "co-scheduled/pymc-check-resources.txt"
+    },
+    {
+      "case": "co-scheduled",
+      "stage": "foerster-check",
+      "command": [
+        "clojure",
+        "-M:jvm:study",
+        "-m",
+        "foerster-study",
+        "check",
+        "results/kettle-and-pine/co-scheduled/fixture.json",
+        "results/kettle-and-pine/co-scheduled"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 133.2174702859993,
+      "log": "co-scheduled/foerster-check.log",
+      "resources": "co-scheduled/foerster-check-resources.txt"
+    },
+    {
+      "case": "co-scheduled",
+      "stage": "compare-checks",
+      "command": [
+        "../.agent-tools/retailer-study-venv/bin/python",
+        "study/compare_checks.py",
+        "results/kettle-and-pine/co-scheduled"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 2.3798833590044524,
+      "log": "co-scheduled/compare-checks.log",
+      "resources": "co-scheduled/compare-checks-resources.txt"
+    },
+    {
+      "case": "calibrated",
+      "stage": "pymc-check",
+      "command": [
+        "../.agent-tools/retailer-study-venv/bin/python",
+        "study/pymc_audit.py",
+        "results/kettle-and-pine/calibrated/fixture.json",
+        "results/kettle-and-pine/calibrated/pymc-expanded-check.json"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 13.070342885002901,
+      "log": "calibrated/pymc-check.log",
+      "resources": "calibrated/pymc-check-resources.txt"
+    },
+    {
+      "case": "calibrated",
+      "stage": "foerster-check",
+      "command": [
+        "clojure",
+        "-M:jvm:study",
+        "-m",
+        "foerster-study",
+        "check",
+        "results/kettle-and-pine/calibrated/fixture.json",
+        "results/kettle-and-pine/calibrated"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 208.31774874200346,
+      "log": "calibrated/foerster-check.log",
+      "resources": "calibrated/foerster-check-resources.txt"
+    },
+    {
+      "case": "calibrated",
+      "stage": "compare-checks",
+      "command": [
+        "../.agent-tools/retailer-study-venv/bin/python",
+        "study/compare_checks.py",
+        "results/kettle-and-pine/calibrated"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 3.9556890060048318,
+      "log": "calibrated/compare-checks.log",
+      "resources": "calibrated/compare-checks-resources.txt"
+    },
+    {
+      "case": "staggered",
+      "stage": "fit",
+      "command": [
+        "../.agent-tools/retailer-study-venv/bin/python",
+        "study/pymc_model.py",
+        "results/kettle-and-pine/staggered/fixture.json",
+        "results/kettle-and-pine/staggered/full/pymc",
+        "--profile",
+        "full"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 212.99888702500175,
+      "log": "staggered/full/pymc/fit.log",
+      "resources": "staggered/full/pymc/fit-resources.txt"
+    },
+    {
+      "case": "staggered",
+      "stage": "decision",
+      "command": [
+        "../.agent-tools/retailer-study-venv/bin/python",
+        "study/pymc_decision.py",
+        "results/kettle-and-pine/staggered/fixture.json",
+        "results/kettle-and-pine/staggered/full/pymc"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 6.680975237999519,
+      "log": "staggered/full/pymc/decision.log",
+      "resources": "staggered/full/pymc/decision-resources.txt"
+    },
+    {
+      "case": "staggered",
+      "stage": "fit",
+      "command": [
+        "clojure",
+        "-M:jvm:study",
+        "-m",
+        "foerster-study",
+        "fit",
+        "results/kettle-and-pine/staggered/fixture.json",
+        "results/kettle-and-pine/staggered/full/foerster",
+        "full"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 659.9214943239931,
+      "log": "staggered/full/foerster/fit.log",
+      "resources": "staggered/full/foerster/fit-resources.txt"
+    },
+    {
+      "case": "staggered",
+      "stage": "decision",
+      "command": [
+        "clojure",
+        "-M:jvm:study",
+        "-m",
+        "foerster-study",
+        "decision",
+        "results/kettle-and-pine/staggered/fixture.json",
+        "results/kettle-and-pine/staggered/full/foerster"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 97.39709043999756,
+      "log": "staggered/full/foerster/decision.log",
+      "resources": "staggered/full/foerster/decision-resources.txt"
+    },
+    {
+      "case": "staggered",
+      "stage": "native-replay",
+      "command": [
+        "clojure",
+        "-M:jvm:study",
+        "-m",
+        "foerster-study",
+        "replay",
+        "results/kettle-and-pine/staggered/fixture.json",
+        "results/kettle-and-pine/staggered/full/foerster"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 95.61737171300047,
+      "log": "staggered/full/foerster/native-replay.log",
+      "resources": "staggered/full/foerster/native-replay-resources.txt"
+    },
+    {
+      "case": "staggered",
+      "stage": "independent-evaluation",
+      "command": [
+        "../.agent-tools/retailer-study-venv/bin/python",
+        "study/foerster_evaluation.py",
+        "results/kettle-and-pine/staggered/fixture.json",
+        "results/kettle-and-pine/staggered/full/foerster"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 2.9737577409978257,
+      "log": "staggered/full/foerster/independent-evaluation.log",
+      "resources": "staggered/full/foerster/independent-evaluation-resources.txt"
+    },
+    {
+      "case": "staggered",
+      "stage": "compare-posteriors",
+      "command": [
+        "../.agent-tools/retailer-study-venv/bin/python",
+        "study/compare_posteriors.py",
+        "results/kettle-and-pine/staggered/full"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 5.533949794000364,
+      "log": "staggered/full/compare-posteriors.log",
+      "resources": "staggered/full/compare-posteriors-resources.txt"
+    },
+    {
+      "case": "staggered",
+      "stage": "figures",
+      "command": [
+        "../.agent-tools/retailer-study-venv/bin/python",
+        "study/figures.py",
+        "results/kettle-and-pine/staggered/full"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 1.5180529950011987,
+      "log": "staggered/full/figures.log",
+      "resources": "staggered/full/figures-resources.txt"
+    },
+    {
+      "case": "co-scheduled",
+      "stage": "fit",
+      "command": [
+        "../.agent-tools/retailer-study-venv/bin/python",
+        "study/pymc_model.py",
+        "results/kettle-and-pine/co-scheduled/fixture.json",
+        "results/kettle-and-pine/co-scheduled/full/pymc",
+        "--profile",
+        "full"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 236.82384747800097,
+      "log": "co-scheduled/full/pymc/fit.log",
+      "resources": "co-scheduled/full/pymc/fit-resources.txt"
+    },
+    {
+      "case": "co-scheduled",
+      "stage": "decision",
+      "command": [
+        "../.agent-tools/retailer-study-venv/bin/python",
+        "study/pymc_decision.py",
+        "results/kettle-and-pine/co-scheduled/fixture.json",
+        "results/kettle-and-pine/co-scheduled/full/pymc"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 10.314526761001616,
+      "log": "co-scheduled/full/pymc/decision.log",
+      "resources": "co-scheduled/full/pymc/decision-resources.txt"
+    },
+    {
+      "case": "co-scheduled",
+      "stage": "fit",
+      "command": [
+        "clojure",
+        "-M:jvm:study",
+        "-m",
+        "foerster-study",
+        "fit",
+        "results/kettle-and-pine/co-scheduled/fixture.json",
+        "results/kettle-and-pine/co-scheduled/full/foerster",
+        "full"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 743.203261720002,
+      "log": "co-scheduled/full/foerster/fit.log",
+      "resources": "co-scheduled/full/foerster/fit-resources.txt"
+    },
+    {
+      "case": "co-scheduled",
+      "stage": "decision",
+      "command": [
+        "clojure",
+        "-M:jvm:study",
+        "-m",
+        "foerster-study",
+        "decision",
+        "results/kettle-and-pine/co-scheduled/fixture.json",
+        "results/kettle-and-pine/co-scheduled/full/foerster"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 123.80618615599815,
+      "log": "co-scheduled/full/foerster/decision.log",
+      "resources": "co-scheduled/full/foerster/decision-resources.txt"
+    },
+    {
+      "case": "co-scheduled",
+      "stage": "native-replay",
+      "command": [
+        "clojure",
+        "-M:jvm:study",
+        "-m",
+        "foerster-study",
+        "replay",
+        "results/kettle-and-pine/co-scheduled/fixture.json",
+        "results/kettle-and-pine/co-scheduled/full/foerster"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 119.91777955299767,
+      "log": "co-scheduled/full/foerster/native-replay.log",
+      "resources": "co-scheduled/full/foerster/native-replay-resources.txt"
+    },
+    {
+      "case": "co-scheduled",
+      "stage": "independent-evaluation",
+      "command": [
+        "../.agent-tools/retailer-study-venv/bin/python",
+        "study/foerster_evaluation.py",
+        "results/kettle-and-pine/co-scheduled/fixture.json",
+        "results/kettle-and-pine/co-scheduled/full/foerster"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 3.6454940309995436,
+      "log": "co-scheduled/full/foerster/independent-evaluation.log",
+      "resources": "co-scheduled/full/foerster/independent-evaluation-resources.txt"
+    },
+    {
+      "case": "co-scheduled",
+      "stage": "compare-posteriors",
+      "command": [
+        "../.agent-tools/retailer-study-venv/bin/python",
+        "study/compare_posteriors.py",
+        "results/kettle-and-pine/co-scheduled/full"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 7.419746902000043,
+      "log": "co-scheduled/full/compare-posteriors.log",
+      "resources": "co-scheduled/full/compare-posteriors-resources.txt"
+    },
+    {
+      "case": "co-scheduled",
+      "stage": "figures",
+      "command": [
+        "../.agent-tools/retailer-study-venv/bin/python",
+        "study/figures.py",
+        "results/kettle-and-pine/co-scheduled/full"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 1.8803343850013334,
+      "log": "co-scheduled/full/figures.log",
+      "resources": "co-scheduled/full/figures-resources.txt"
+    },
+    {
+      "case": "calibrated",
+      "stage": "fit",
+      "command": [
+        "../.agent-tools/retailer-study-venv/bin/python",
+        "study/pymc_model.py",
+        "results/kettle-and-pine/calibrated/fixture.json",
+        "results/kettle-and-pine/calibrated/full/pymc",
+        "--profile",
+        "full"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 264.67247516899806,
+      "log": "calibrated/full/pymc/fit.log",
+      "resources": "calibrated/full/pymc/fit-resources.txt"
+    },
+    {
+      "case": "calibrated",
+      "stage": "decision",
+      "command": [
+        "../.agent-tools/retailer-study-venv/bin/python",
+        "study/pymc_decision.py",
+        "results/kettle-and-pine/calibrated/fixture.json",
+        "results/kettle-and-pine/calibrated/full/pymc"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 14.646275278995745,
+      "log": "calibrated/full/pymc/decision.log",
+      "resources": "calibrated/full/pymc/decision-resources.txt"
+    },
+    {
+      "case": "calibrated",
+      "stage": "fit",
+      "command": [
+        "clojure",
+        "-M:jvm:study",
+        "-m",
+        "foerster-study",
+        "fit",
+        "results/kettle-and-pine/calibrated/fixture.json",
+        "results/kettle-and-pine/calibrated/full/foerster",
+        "full"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 896.1611740950029,
+      "log": "calibrated/full/foerster/fit.log",
+      "resources": "calibrated/full/foerster/fit-resources.txt"
+    },
+    {
+      "case": "calibrated",
+      "stage": "decision",
+      "command": [
+        "clojure",
+        "-M:jvm:study",
+        "-m",
+        "foerster-study",
+        "decision",
+        "results/kettle-and-pine/calibrated/fixture.json",
+        "results/kettle-and-pine/calibrated/full/foerster"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 88.76983544100221,
+      "log": "calibrated/full/foerster/decision.log",
+      "resources": "calibrated/full/foerster/decision-resources.txt"
+    },
+    {
+      "case": "calibrated",
+      "stage": "native-replay",
+      "command": [
+        "clojure",
+        "-M:jvm:study",
+        "-m",
+        "foerster-study",
+        "replay",
+        "results/kettle-and-pine/calibrated/fixture.json",
+        "results/kettle-and-pine/calibrated/full/foerster"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 80.82255701800023,
+      "log": "calibrated/full/foerster/native-replay.log",
+      "resources": "calibrated/full/foerster/native-replay-resources.txt"
+    },
+    {
+      "case": "calibrated",
+      "stage": "independent-evaluation",
+      "command": [
+        "../.agent-tools/retailer-study-venv/bin/python",
+        "study/foerster_evaluation.py",
+        "results/kettle-and-pine/calibrated/fixture.json",
+        "results/kettle-and-pine/calibrated/full/foerster"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 2.470565304000047,
+      "log": "calibrated/full/foerster/independent-evaluation.log",
+      "resources": "calibrated/full/foerster/independent-evaluation-resources.txt"
+    },
+    {
+      "case": "calibrated",
+      "stage": "compare-posteriors",
+      "command": [
+        "../.agent-tools/retailer-study-venv/bin/python",
+        "study/compare_posteriors.py",
+        "results/kettle-and-pine/calibrated/full"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 5.030093531997409,
+      "log": "calibrated/full/compare-posteriors.log",
+      "resources": "calibrated/full/compare-posteriors-resources.txt"
+    },
+    {
+      "case": "calibrated",
+      "stage": "figures",
+      "command": [
+        "../.agent-tools/retailer-study-venv/bin/python",
+        "study/figures.py",
+        "results/kettle-and-pine/calibrated/full"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 1.3680120069984696,
+      "log": "calibrated/full/figures.log",
+      "resources": "calibrated/full/figures-resources.txt"
+    },
+    {
+      "case": "all",
+      "stage": "truth-regret",
+      "command": [
+        "../.agent-tools/retailer-study-venv/bin/python",
+        "study/truth_regret.py",
+        "results/kettle-and-pine"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 0.816823414999817,
+      "log": "truth-regret.log",
+      "resources": "truth-regret-resources.txt"
+    },
+    {
+      "case": "warehouse",
+      "stage": "decision",
+      "command": [
+        "clojure",
+        "-J-Xmx3g",
+        "-M:jvm:study",
+        "-m",
+        "warehouse-study",
+        "examples/kettle_and_pine/data/warehouse.json",
+        "results/kettle-and-pine/calibrated/fixture.json",
+        "results/kettle-and-pine/calibrated/full/foerster",
+        "results/kettle-and-pine/warehouse"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 222.10188769999513,
+      "log": "warehouse/decision.log",
+      "resources": "warehouse/decision-resources.txt"
+    },
+    {
+      "case": "warehouse",
+      "stage": "independent-check",
+      "command": [
+        "../.agent-tools/retailer-study-venv/bin/python",
+        "study/warehouse_check.py",
+        "check",
+        "examples/kettle_and_pine/data/warehouse.json",
+        "results/kettle-and-pine/warehouse",
+        "results/kettle-and-pine/calibrated/fixture.json"
+      ],
+      "exit": 0,
+      "timed-out": false,
+      "wall-seconds": 4.424492457997985,
+      "log": "warehouse/independent-check.log",
+      "resources": "warehouse/independent-check-resources.txt"
+    }
+  ],
+  "revision": "8f2426cc30f727008c8af6e70b258fa3a687f9d8",
+  "dirty-at-start": false,
+  "clojure-aliases": "",
+  "source-manifest-sha256": "853d4e0bee95b99e3568ad4d5a7d9372f2b13dfaf99310e156dccc2ce54952f9",
+  "finished-at": "2026-11-04T19:15:33.972808+00:00"
+}

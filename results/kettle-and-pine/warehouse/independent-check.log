@@ -1,0 +1,16 @@
+{
+  "passes": true,
+  "capacity-reference": {
+    "mean": 552.069877657212,
+    "sd": 17.374397497042914,
+    "saturated": true
+  },
+  "capacity-mean-error-in-mcse": [
+    0.5880178177040485,
+    1.8018621189481383,
+    0.7091431760693255
+  ],
+  "capacity-passes": true,
+  "profit-max-relative-error": 0.0,
+  "profit-passes": true
+}

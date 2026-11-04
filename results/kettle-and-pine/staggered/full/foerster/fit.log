@@ -1,0 +1,52 @@
+WARNING: Using incubator modules: jdk.incubator.vector
+WARNING: await already refers to: #'clojure.core/await in namespace: yggdrasil.convergent.overlay, being replaced by: #'is.simm.partial-cps.async/await
+WARNING: await already refers to: #'clojure.core/await in namespace: yggdrasil.convergent.dag, being replaced by: #'is.simm.partial-cps.async/await
+WARNING: await already refers to: #'clojure.core/await in namespace: org.replikativ.spindel.yggdrasil, being replaced by: #'is.simm.partial-cps.async/await
+WARNING: await already refers to: #'clojure.core/await in namespace: yggdrasil.storage, being replaced by: #'is.simm.partial-cps.async/await
+WARNING: await already refers to: #'clojure.core/await in namespace: yggdrasil.convergent.durable, being replaced by: #'is.simm.partial-cps.async/await
+WARNING: await already refers to: #'clojure.core/await in namespace: yggdrasil.convergent.twopset, being replaced by: #'is.simm.partial-cps.async/await
+WARNING: await already refers to: #'clojure.core/await in namespace: yggdrasil.gc, being replaced by: #'is.simm.partial-cps.async/await
+Registering annotations from typed.ann.clojure...
+Registering annotations from typed.ann.clojure...
+Registering extensions from typed.clj.ext.clojure.core...
+Registering extensions from typed.ext.clojure.spec.alpha...
+Registering extensions from typed.clj.ext.clojure.core.typed...
+Registering extensions from typed.clj.ext.clojure.core.typed.unsafe...
+Registering :var-type-providers from typedclojure_config's...
+[:closure/hoist] type-completeness violations:
+  helper 'helper_1': 31 Object-typed param(s) ["b0_α_212933_214889" "b1_α_212934_214890" "b2_α_212935_214891" "base_α_212939_214895" "coefficient0_0_α_212954_214915" "coefficient0_1_α_212955_214916" "coefficient0_2_α_212956_214917" "coefficient0_3_α_212957_214918" "coefficient0_4_α_212958_214919" "coefficient0_5_α_212959_214920" "coefficient1_0_α_212969_214935" "coefficient1_1_α_212970_214936" "coefficient1_2_α_212971_214937" "coefficient1_3_α_212972_214938" "coefficient1_4_α_212973_214939" "coefficient1_5_α_212974_214940" "coefficient2_0_α_212984_214955" "coefficient2_1_α_212985_214956" "coefficient2_2_α_212986_214957" "coefficient2_3_α_212987_214958" "coefficient2_4_α_212988_214959" "coefficient2_5_α_212989_214960" "g0_α_212941_214897" "g1_α_212942_214898" "g2_α_212943_214899" "g3_α_212944_214900" "kappa0_α_212936_214892" "kappa1_α_212937_214893" "kappa2_α_212938_214894" "red_count__861_215114" "sigma_α_212940_214896"]
+  helper 'helper_2': 32 Object-typed param(s) ["b0_α_212933_214889" "b1_α_212934_214890" "b2_α_212935_214891" "base_α_212939_214895" "coefficient0_0_α_212954_214915" "coefficient0_1_α_212955_214916" "coefficient0_2_α_212956_214917" "coefficient0_3_α_212957_214918" "coefficient0_4_α_212958_214919" "coefficient0_5_α_212959_214920" "coefficient1_0_α_212969_214935" "coefficient1_1_α_212970_214936" "coefficient1_2_α_212971_214937" "coefficient1_3_α_212972_214938" "coefficient1_4_α_212973_214939" "coefficient1_5_α_212974_214940" "coefficient2_0_α_212984_214955" "coefficient2_1_α_212985_214956" "coefficient2_2_α_212986_214957" "coefficient2_3_α_212987_214958" "coefficient2_4_α_212988_214959" "coefficient2_5_α_212989_214960" "dg_y__910_α_224152" "g0_α_212941_214897" "g1_α_212942_214898" "g2_α_212943_214899" "g3_α_212944_214900" "kappa0_α_212936_214892" "kappa1_α_212937_214893" "kappa2_α_212938_214894" "n_bwd__898_216087" "sigma_α_212940_214896"]
+  helper 'helper_3': 1 Object-typed param(s) ["d_coefficient2_5_α_212989_acc__890_215163"]
+  helper 'helper_4': 1 Object-typed param(s) ["d_coefficient2_4_α_212988_acc__889_215162"]
+  helper 'helper_5': 1 Object-typed param(s) ["d_coefficient2_3_α_212987_acc__888_215161"]
+  helper 'helper_6': 1 Object-typed param(s) ["d_coefficient2_2_α_212986_acc__887_215160"]
+  helper 'helper_7': 1 Object-typed param(s) ["d_coefficient2_1_α_212985_acc__886_215159"]
+  helper 'helper_8': 1 Object-typed param(s) ["d_coefficient2_0_α_212984_acc__885_215158"]
+  helper 'helper_9': 1 Object-typed param(s) ["d_coefficient1_5_α_212974_acc__882_215155"]
+  helper 'helper_10': 1 Object-typed param(s) ["d_coefficient1_4_α_212973_acc__881_215154"]
+  helper 'helper_11': 1 Object-typed param(s) ["d_coefficient1_3_α_212972_acc__880_215153"]
+  helper 'helper_12': 1 Object-typed param(s) ["d_coefficient1_2_α_212971_acc__879_215152"]
+  helper 'helper_13': 1 Object-typed param(s) ["d_coefficient1_1_α_212970_acc__878_215151"]
+  helper 'helper_14': 1 Object-typed param(s) ["d_coefficient1_0_α_212969_acc__877_215150"]
+  helper 'helper_15': 1 Object-typed param(s) ["d_coefficient0_5_α_212959_acc__874_215147"]
+  helper 'helper_16': 1 Object-typed param(s) ["d_coefficient0_4_α_212958_acc__873_215146"]
+  helper 'helper_17': 1 Object-typed param(s) ["d_coefficient0_3_α_212957_acc__872_215145"]
+  helper 'helper_18': 1 Object-typed param(s) ["d_coefficient0_2_α_212956_acc__871_215144"]
+  helper 'helper_19': 1 Object-typed param(s) ["d_coefficient0_1_α_212955_acc__870_215143"]
+  helper 'helper_20': 1 Object-typed param(s) ["d_coefficient0_0_α_212954_acc__869_215142"]
+  helper 'helper_21': 1 Object-typed param(s) ["d_g3_α_212944__2102_216024"]
+  helper 'helper_22': 1 Object-typed param(s) ["d_g2_α_212943__2107_216028"]
+  helper 'helper_23': 1 Object-typed param(s) ["d_g1_α_212942__2112_216032"]
+  helper 'helper_24': 1 Object-typed param(s) ["d_g0_α_212941__2117_216036"]
+  helper 'helper_25': 1 Object-typed param(s) ["d_sigma_α_212940__2122_216040"]
+  helper 'helper_26': 1 Object-typed param(s) ["d_base_α_212939__2127_216044"]
+  helper 'helper_27': 1 Object-typed param(s) ["d_kappa2_α_212938__2132_216048"]
+  helper 'helper_28': 1 Object-typed param(s) ["d_kappa1_α_212937__2137_216052"]
+  helper 'helper_29': 1 Object-typed param(s) ["d_kappa0_α_212936__2142_216056"]
+  helper 'helper_30': 1 Object-typed param(s) ["d_b2_α_212935__2147_216060"]
+  helper 'helper_31': 1 Object-typed param(s) ["d_b1_α_212934__2152_216064"]
+  helper 'helper_32': 1 Object-typed param(s) ["d_b0_α_212933__2157_216068"]
+  helper 'helper_34': 1 Object-typed param(s) ["body__190_215120"]
+  helper 'compute_chunk_2': 12 Object-typed param(s) ["a0_α_212930_214886" "a1_α_212931_214887" "anf__17_α_213011_α_213031_α_213047_α_213070_α_213100_α_213137_α_213180_α_213240_α_213309_α_213379_α_213466_α_213562_α_213659_α_213773_α_213896_α_214020_α_214145_α_214271_α_214400_α_214674_214964" "anf__19_α_213013_α_213033_α_213049_α_213072_α_213102_α_213139_α_213182_α_213242_α_213311_α_213381_α_213468_α_213564_α_213661_α_213775_α_213898_α_214022_α_214147_α_214273_α_214402_α_214676_214966" "b0_α_212933_214889" "b1_α_212934_214890" "g0_α_212941_214897" "g1_α_212942_214898" "g2_α_212943_214899" "g3_α_212944_214900" "kappa0_α_212936_214892" "sigma_α_212940_214896"]
+  helper 'compute_chunk_3': 33 Object-typed param(s) ["a2_α_212932_214888" "anf__182_215051" "argument__87_α_213543_α_213639_α_213736_α_213850_α_213973_α_214097_α_214222_α_214348_α_214477_α_214751_215050" "b0_α_212933_214889" "b1_α_212934_214890" "b2_α_212935_214891" "base_α_212939_214895" "coefficient0_0_α_212954_214915" "coefficient0_1_α_212955_214916" "coefficient0_2_α_212956_214917" "coefficient0_3_α_212957_214918" "coefficient0_4_α_212958_214919" "coefficient0_5_α_212959_214920" "coefficient1_0_α_212969_214935" "coefficient1_1_α_212970_214936" "coefficient1_2_α_212971_214937" "coefficient1_3_α_212972_214938" "coefficient1_4_α_212973_214939" "coefficient1_5_α_212974_214940" "coefficient2_0_α_212984_214955" "coefficient2_1_α_212985_214956" "coefficient2_2_α_212986_214957" "coefficient2_3_α_212987_214958" "coefficient2_4_α_212988_214959" "coefficient2_5_α_212989_214960" "g0_α_212941_214897" "g1_α_212942_214898" "g2_α_212943_214899" "g3_α_212944_214900" "kappa0_α_212936_214892" "kappa1_α_212937_214893" "kappa2_α_212938_214894" "sigma_α_212940_214896"]
+  helper 'compute_chunk_4': 24 Object-typed param(s) ["a0_α_212930_214886" "a1_α_212931_214887" "a2_α_212932_214888" "anf__108_α_213759_α_213873_α_213996_α_214120_α_214245_α_214371_α_214500_α_214774_215077" "anf__58_α_213226_α_213286_α_213355_α_213425_α_213512_α_213608_α_213705_α_213819_α_213942_α_214066_α_214191_α_214317_α_214446_α_214720_215015" "anf__83_α_213452_α_213539_α_213635_α_213732_α_213846_α_213969_α_214093_α_214218_α_214344_α_214473_α_214747_215046" "b0_α_212933_214889" "b1_α_212934_214890" "b2_α_212935_214891" "kappa0_α_212936_214892" "kappa1_α_212937_214893" "kappa2_α_212938_214894" "red_bwd__899_215136" "residual_207780_α_212996_α_213230_α_213231_α_213291_α_213360_α_213430_α_213517_α_213613_α_213710_α_213824_α_213947_α_214071_α_214196_α_214322_α_214451_α_214725_215022" "residual_207781_α_212997_α_213299_α_213300_α_213369_α_213439_α_213526_α_213622_α_213719_α_213833_α_213956_α_214080_α_214205_α_214331_α_214460_α_214734_215033" "residual_207782_α_212998_α_213456_α_213457_α_213544_α_213640_α_213737_α_213851_α_213974_α_214098_α_214223_α_214349_α_214478_α_214752_215053" "residual_207783_α_212999_α_213552_α_213553_α_213649_α_213746_α_213860_α_213983_α_214107_α_214232_α_214358_α_214487_α_214761_215064" "residual_207784_α_213000_α_213763_α_213764_α_213878_α_214001_α_214125_α_214250_α_214376_α_214505_α_214779_215084" "residual_207785_α_213001_α_213886_α_213887_α_214010_α_214134_α_214259_α_214385_α_214514_α_214788_215095" "residual_207787_α_212993_α_213067_α_213091_α_213121_α_213158_α_213201_α_213261_α_213330_α_213400_α_213487

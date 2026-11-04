@@ -1,0 +1,53 @@
+{
+  "fixture-case": "calibrated",
+  "seed": 20261104,
+  "economics": {
+    "average-order-value": 45.0,
+    "margin": 0.4,
+    "delay-cost-per-order-week": 4.0,
+    "weekly-cancellation-rate": 0.15
+  },
+  "capacity": {
+    "normal": 900.0,
+    "prior-mean": 650.0,
+    "prior-sd": 120.0,
+    "weekly-sd": 30.0,
+    "report-sd": 5.0,
+    "remaining-reduced-weeks": 3
+  },
+  "hidden-true-reduced-capacity": 560.0,
+  "budgets": [
+    0.0,
+    1250.0,
+    2500.0,
+    3750.0,
+    5000.0,
+    6250.0,
+    7500.0
+  ],
+  "disruption-start": {
+    "backlog": 300.0
+  },
+  "disruption-weeks": [
+    {
+      "week": -3,
+      "arrivals": 762.4818102625052,
+      "reported-shipped": 592.8853057260998
+    },
+    {
+      "week": -2,
+      "arrivals": 802.7600464067671,
+      "reported-shipped": 542.4757690755457
+    },
+    {
+      "week": -1,
+      "arrivals": 762.5161596706864,
+      "reported-shipped": 514.5579079500542
+    }
+  ],
+  "current": {
+    "backlog": 681.0327715907794
+  },
+  "horizon": 4,
+  "carryover": 5
+}

@@ -1,0 +1,1 @@
+{"case": "calibrated", "profile": "full", "optimizer": {"success": true, "iterations": 13}, "timing": {"public-allocation-seconds": 3.323206074004702, "independent-evaluation-seconds": 1.5520932840008754}}

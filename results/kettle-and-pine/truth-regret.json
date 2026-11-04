@@ -1,0 +1,120 @@
+{
+  "scope": "Hidden-truth scoring after the decision; truth never selects a plan.",
+  "generator-sha256": "8c96331d28ab75da5208c3c4d819684aaec827f1a056e8aabba171f11e0bef81",
+  "cases": [
+    {
+      "case": "staggered",
+      "fixture-sha256": "b3f1806fac3daa24da41e3dde6a792dc9c695752f89f784f0d1d2480052d00e8",
+      "posterior-comparison-sha256": "044ebe824198546e8aa80446fcbff172e3dfa79123f2b43d81cf0055fc972716",
+      "current-plan": [
+        2000.0,
+        1800.0,
+        1200.0
+      ],
+      "truth-optimal-plan": [
+        1115.6203613915984,
+        2115.735974650979,
+        1768.643663957422
+      ],
+      "truth-optimal-gain": 2861.335579173814,
+      "plans": [
+        {
+          "plan": "foerster-optimized",
+          "weekly-allocation": [
+            1386.2388689095255,
+            2016.1014808553969,
+            1597.6596502350776
+          ],
+          "true-gain": 2566.841321216518,
+          "regret": 294.4942579572962
+        },
+        {
+          "plan": "pymc-optimized",
+          "weekly-allocation": [
+            1403.2652300645184,
+            2005.0313619605336,
+            1591.7034079749485
+          ],
+          "true-gain": 2531.94129203778,
+          "regret": 329.3942871360341
+        }
+      ]
+    },
+    {
+      "case": "co-scheduled",
+      "fixture-sha256": "3ac802d249f320a7fc7088aa5208adad3ae494b9ee093c7e36005b11694ce55d",
+      "posterior-comparison-sha256": "779370d36b059253f404e91b47706cc88fdd77b4d25eb8e3e7c2ceacf3458dc0",
+      "current-plan": [
+        2000.0,
+        1800.0,
+        1200.0
+      ],
+      "truth-optimal-plan": [
+        1097.6812423048589,
+        2084.958370810003,
+        1817.3603868851385
+      ],
+      "truth-optimal-gain": 3114.3704315999057,
+      "plans": [
+        {
+          "plan": "foerster-optimized",
+          "weekly-allocation": [
+            1382.0493709588654,
+            2406.3104632501727,
+            1211.640165790963
+          ],
+          "true-gain": 1681.8452219296014,
+          "regret": 1432.5252096703043
+        },
+        {
+          "plan": "pymc-optimized",
+          "weekly-allocation": [
+            1375.3887458351896,
+            2401.549629729082,
+            1223.0616244357277
+          ],
+          "true-gain": 1739.3871889234579,
+          "regret": 1374.9832426764478
+        }
+      ]
+    },
+    {
+      "case": "calibrated",
+      "fixture-sha256": "03db99803c0052aaf17309c3e2304e19b6dfa8bdf4c2e0780c249849102534df",
+      "posterior-comparison-sha256": "d58be55084e0473a1db224786eeef154b2773f94b11c4c3e9f4054dffa1ebaa8",
+      "current-plan": [
+        2000.0,
+        1800.0,
+        1200.0
+      ],
+      "truth-optimal-plan": [
+        1097.6812423048589,
+        2084.958370810003,
+        1817.3603868851385
+      ],
+      "truth-optimal-gain": 3114.3704315999057,
+      "plans": [
+        {
+          "plan": "foerster-optimized",
+          "weekly-allocation": [
+            1372.3088435274587,
+            2013.1304126821149,
+            1614.5607437904275
+          ],
+          "true-gain": 2787.163090152986,
+          "regret": 327.2073414469196
+        },
+        {
+          "plan": "pymc-optimized",
+          "weekly-allocation": [
+            1354.9043699537542,
+            2000.3664512273624,
+            1644.729178818883
+          ],
+          "true-gain": 2836.447246780357,
+          "regret": 277.9231848195486
+        }
+      ]
+    }
+  ]
+}

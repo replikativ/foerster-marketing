@@ -1,0 +1,15 @@
+{
+  "case": "staggered",
+  "passes": true,
+  "scope": "fixed-point density, gradients, original-unit means/likelihood and changed observations; no posterior claim",
+  "points": 3,
+  "max-errors": {
+    "logp": 2.5579538487363607e-13,
+    "gradient": 7.179695666516158e-14,
+    "mean": 1.0913936421275139e-11,
+    "pointwise": 5.684341886080802e-14
+  },
+  "fixture-sha256": "b3f1806fac3daa24da41e3dde6a792dc9c695752f89f784f0d1d2480052d00e8",
+  "python-audit-sha256": "ad1bf8b24315e75b5d554c2afc3884cba4a3f5696df78be0837edda3427e26bf",
+  "foerster-audit-sha256": "13286c8c164b7219d665404015f930010088005cb3bd35eccf2c1172c0624c8a"
+}

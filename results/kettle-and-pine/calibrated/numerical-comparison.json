@@ -1,0 +1,15 @@
+{
+  "case": "calibrated",
+  "passes": true,
+  "scope": "fixed-point density, gradients, original-unit means/likelihood and changed observations; no posterior claim",
+  "points": 3,
+  "max-errors": {
+    "logp": 4.263256414560601e-13,
+    "gradient": 6.121027404697405e-14,
+    "mean": 1.0913936421275139e-11,
+    "pointwise": 6.750155989720952e-14
+  },
+  "fixture-sha256": "03db99803c0052aaf17309c3e2304e19b6dfa8bdf4c2e0780c249849102534df",
+  "python-audit-sha256": "cc27b9b2623d7e2e72576cc7b209a3c1566cdd369b7ee6624cef1dd13a1336d0",
+  "foerster-audit-sha256": "43e268742b5de3f5b368e9a27eb10ed7c71bbd1595279369632db6c6abcf899c"
+}

@@ -1,0 +1,23 @@
+	Command being timed: "clojure -M:jvm:study -m foerster-study fit results/kettle-and-pine/staggered/fixture.json results/kettle-and-pine/staggered/full/foerster full"
+	User time (seconds): 1512.92
+	System time (seconds): 13.19
+	Percent of CPU this job got: 231%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 10:59.87
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1465048
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 64576
+	Minor (reclaiming a frame) page faults: 948490
+	Voluntary context switches: 309084
+	Involuntary context switches: 411308
+	Swaps: 0
+	File system inputs: 2857606
+	File system outputs: 50381
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

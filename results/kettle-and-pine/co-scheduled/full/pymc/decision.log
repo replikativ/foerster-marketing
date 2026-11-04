@@ -1,0 +1,1 @@
+{"case": "co-scheduled", "profile": "full", "optimizer": {"success": true, "iterations": 17}, "timing": {"public-allocation-seconds": 2.4936041469991324, "independent-evaluation-seconds": 1.4600514429985196}}

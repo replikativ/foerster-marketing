@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o pipefail
+
+echo "Running JVM tests"
+
+# Compiling a model can stay silent for minutes; print a heartbeat so the
+# CI step's no-output timeout does not stop the suite.
+clojure -M:jvm:test &
+tests=$!
+while kill -0 "$tests" 2>/dev/null; do
+  sleep 60
+  kill -0 "$tests" 2>/dev/null && echo "tests still running"
+done
+wait "$tests"
